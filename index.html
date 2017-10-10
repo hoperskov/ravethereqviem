@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>StavBurger</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Satisfy|Montez" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://use.fontawesome.com/978acf80ee.js"></script>
+  <script src="js/simpleCart.js"></script>
+  <style>
+   @font-face {
+    font-family: Bebas; /* Гарнитура шрифта */
+    src: url(fonts/bebas_neue/BebasNeue%20Bold.otf); /* Путь к файлу со шрифтом */
+   }
+    @font-face {
+    font-family: BebasT; /* Гартур шрифта */
+    src: url(fonts/bebas_neue/BebasNeue%20Thin.otf); /* Путь к файлу со шрифтом */
+   }
+       @font-face {
+    font-family: BebasR; /* Гарнитура шрифта */
+    src: url(fonts/bebas_neue/BebasNeue%20Regular.otf); /* Путь к файлу со шрифтом */
+   }
+   .pere {
+    font-family: Bebas;
+	font-size:3em;
+   }
+      .pere3 {
+    font-family: BebasR;
+	font-size:2em;
+   }
+    .pere2 {
+    font-family: BebasT;
+	font-size:4em;
+   }
+   .gfgfg {
+   line-height: 2.5em;
+   }
+  </style>
+
+</head>
+
+    <body>
+	<header>
+	<div class="navbar-fixed">
+<nav class="brown darken-4 nav-extended"  role="navigation">
+    <div class="nav-wrapper">
+			  <ul id="nav-mobile" class="left hide-on-med-and-down "  style="font-family: 'BebasT'">
+      </ul>
+      <a id="logo-container" href="#" class="brand-logo center" style="font-family: 'Satisfy', cursive;" onclick="Materialize.toast('Когда проблемы тянут ко дну, смотри вверх!', 4000, 'material-icons green darken-4')">StavBurger</a>
+	  	  <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li style="font-size:2em;"><i class="material-icons left" >call</i>8 (8652) 455-885&emsp;</li>
+      </ul>
+
+<a href="#" data-activates="cart-mobile" class="button-collapse cart-mobile right"><i class="material-icons">shopping_cart</i></a>      </div>
+
+	<div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#test1">Макдональдс</a></li>
+        <li class="tab"><a href="#test2">KFC</a></li>
+        <li class="tab"><a href="#test1">Subway</a></li>
+		<li class="tab"><a href="#test1">Сувлаки</a></li>
+		<li class="tab"><a href="#test1">Шаурма Тухач</a></li>
+		<li class="tab"><a href="#test1">Блин Доставка</a></li>
+		<li class="tab"><a href="#test1">Бургер&Паста</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+<ul id="nav-mobileq" class="side-nav white">
+
+
+      </ul>
+
+
+
+	  <ul id="cart-mobile" class="side-nav  white">
+	  корзина
+
+      </ul>
+
+  <div class="fixed-action-btn hide-on-med-and-up"><a id="menu" class="waves-effect waves-light btn btn-floating btn-large green darken-4 hide-on-med-and-up" href="tel:88652455885"><i class="material-icons">call</i></a></div>
+</header>
+  <!-- Tap Target Structure -->
+  <div class="hide-on-med-and-up">
+  <div class=" tap-target yellow darken-4 white-text" data-activates="menu">
+    <div class="tap-target-content">
+      <h5>Позвонить курьеру!</h5>
+      <p>Можно просто позвонить нам и сделать заказ. Жмите на кнопку!
+    </div>
+  </div></div>
+<div  class="row ">
+			<div class="valign-wrapper col s12 z-depth-1  white-text center" style="background-image: url('img/cover15.jpg'); background-size:cover; min-height:100vh;">
+			<div class="valign center-block">
+			<a class=" waves-effect waves-light btn-large pere brown darken-4" onclick="Materialize.toast('и не только ;)', 4000, 'material-icons yellow darken-4')">Доставка еды</a>
+			</br><span class="pere brown darken-4">по Ставрополю и Михайловску</span><br>
+			</div>
+			</div>
+</div>
+  <div  class="z-depth-1 row brown darken-1">
+
+<div class="col s12 m12 l12 xl12 cards">
+<!-- товар -->
+<div class="col s12 m6 l4 xl3">
+<div class="card">
+<div class="card-image waves-effect waves-block waves-light">
+<img class="activator" src="img/burger.gif">
+</div>
+<div class="card-content center">
+<span class="card-title activator grey-text text-darken-4">Гамбургер<i class="material-icons right">info_outline</i></span>
+<p><a class="waves-effect waves-light btn-large yellow darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+</div>
+<div class="card-reveal">
+<span class="card-title grey-text text-darken-4">Гамбургер<i class="material-icons right">close</i></span>
+<p>Сочный и вкусный гамбургер</p>
+</div>
+</div>
+</div>
+<!-- товар -->
+<!-- товар -->
+<div class="col s12 m6 l4 xl3">
+<div class="card">
+<div class="card-image waves-effect waves-block waves-light">
+<img class="activator" src="img/burger.gif">
+</div>
+<div class="card-content center">
+<span class="card-title activator grey-text text-darken-4">Гамбургер<i class="material-icons right">info_outline</i></span>
+<p><a class="waves-effect waves-light btn-large yellow darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+</div>
+<div class="card-reveal">
+<span class="card-title grey-text text-darken-4">Гамбургер<i class="material-icons right">close</i></span>
+<p>Сочный и вкусный гамбургер</p>
+</div>
+</div>
+</div>
+<!-- товар -->
+<!-- товар -->
+<div class="col s12 m6 l4 xl3">
+<div class="card">
+<div class="card-image waves-effect waves-block waves-light">
+<img class="activator" src="img/burger.gif">
+</div>
+<div class="card-content center">
+<span class="card-title activator grey-text text-darken-4">Гамбургер<i class="material-icons right">info_outline</i></span>
+<p><a class="waves-effect waves-light btn-large yellow darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+</div>
+<div class="card-reveal">
+<span class="card-title grey-text text-darken-4">Гамбургер<i class="material-icons right">close</i></span>
+<p>Сочный и вкусный гамбургер</p>
+</div>
+</div>
+</div>
+<!-- товар -->
+<!-- товар -->
+<div class="col s12 m6 l4 xl3">
+<div class="card">
+<div class="card-image waves-effect waves-block waves-light">
+<img class="activator" src="img/burger.gif">
+</div>
+<div class="card-content center">
+<span class="card-title activator grey-text text-darken-4">Гамбургер<i class="material-icons right">info_outline</i></span>
+<p><a class="waves-effect waves-light btn-large yellow darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+</div>
+<div class="card-reveal">
+<span class="card-title grey-text text-darken-4">Гамбургер<i class="material-icons right">close</i></span>
+<p>Сочный и вкусный гамбургер</p>
+</div>
+</div>
+</div>
+<!-- товар -->
+
+ </div>
+  </div>
+
+
+
+<footer  class="page-footer white">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="text-darken-2">Footer Content</h5>
+                <p class="text-darken-2 text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="text-darken-2">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright deep-orange darken-4">
+            <div class="container center">
+            <a class="grey-text text-lighten-5 brand-logo" href="https://hoperskov.com" style="font-family: 'Satisfy'; font-size: 25px;
+	text-shadow: #2c2c2c 3px 3px 5px;">Hoperskov</a>
+			</br>
+			создание сайтов
+			</div>
+          </div>
+        </footer>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </body>
+  </html>
